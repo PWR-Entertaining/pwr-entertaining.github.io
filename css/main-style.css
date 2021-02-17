@@ -1,0 +1,24 @@
+body{
+    background-repeat: repeat;
+    margin: 0;
+    padding: 0;
+    font-family: "montserrat";
+    /* background-color: rgb(240, 240, 240); */
+    background-attachment: fixed;
+    background-size: 1000% 1000%;
+}
+
+html, body, header {
+    text-rendering:optimizeLegibility;
+}
+
+.content{
+    display: block;
+    margin-left: 5%;
+    margin-right: 5%;
+    height: 100%;
+    min-height: 1000px;
+    width: 90%;
+    /* background-color: red; */
+    /* background-color: rgb(255, 255, 255); */
+}
