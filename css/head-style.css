@@ -63,7 +63,13 @@ ul,li,a {
 }
 
 li {
+  opacity: 0.5;
   padding-top: 20px;
+}
+
+li:hover{
+  opacity: 1.0;
+  transition: 1s;
 }
 
 nav {
@@ -82,9 +88,10 @@ button{
 }
 
 .button_home {
-  margin: 0;
+  /* margin: 0; */
   padding: 0;
-  content: "PWR";
+  margin: 0px 15px 0px 15px;
+  /* padding: 0px 15px 0px 15px; */
   color: black;
   background-color: rgb(250, 250, 255);
   border: none;
@@ -105,26 +112,26 @@ button{
   position: absolute;
   opacity: 0.0;
   z-index: -1;
+  /* width: 80px; */
 }
 
-.navigation:hover, .button_home:hover + .navigation {
+.navigation:hover, .main_menu:hover > button + .navigation {
   opacity: 1.0;
   transition: 1s;
 }
 
-.navigation:hover > li, .button_home:hover + .navigation > li {
+.navigation:hover > li, .main_menu:hover > .navigation > li {
     display: block;
 }
 
-
 .button_play {
+  padding: 0px 0px 0px 0px;
+  margin: 0px 15px 0px 15px;
   color: black;
   background-color: rgb(250, 250, 255);
   border: none;
   height: 60px;
   width: 60px;
-  top: 0;
-  right: 0;
   border-radius: 50%;
   cursor: pointer;
   background-repeat: no-repeat;
@@ -135,13 +142,13 @@ button{
 }
 
 .button_watch {
+  padding: 0px 0px 0px 0px;
+  margin: 0px 15px 0px 15px;
   color: black;
   background-color: rgb(250, 250, 255);
   border: none;
   height: 60px;
   width: 60px;
-  top: 0;
-  right: 0;
   border-radius: 50%;
   cursor: pointer;
   background-repeat: no-repeat;
@@ -152,13 +159,13 @@ button{
 }
 
 .button_read {
+  padding: 0px 0px 0px 0px;
+  margin: 0px 15px 0px 15px;
   color: black;  
   background-color: rgb(250, 250, 255);
   border: none;
   height: 60px;
   width: 60px;
-  top: 0;
-  right: 0;
   border-radius: 50%;
   cursor: pointer;
   background-repeat: no-repeat;
@@ -168,32 +175,39 @@ button{
 }
 
 .additional_menu{
-  display: none;
+  display: flex;
   align-items: center; 
-  height: 60px;
+  height: auto;
   width: 450px;
-  transition: 0.25s;
+  /* transition: 0.25s; */
   opacity: 0.0;
   float: right;
   margin-right: 1%;
 }
 
 header:hover .additional_menu{
-  display: flex;
-    transition: 5s;
-    opacity: 1.0;
+  transition: 1s;
+  opacity: 1.0;
 }
 
+/* .additional_menu > .search > .button_search, .additional_menu > .user  {
+  display: none;
+} */
+header:hover .additional_menu > div > button, header:hover .additional_menu > button{
+  display: flex;
+}
 .search{
-  height: 60px;
+  /* display: none; */
+  height: auto;
   width: 390px;
   padding: 0;
   border: none;
 }
 
 .button_search{
+  display: none;
   background: 0;
-  opacity: 0.8;
+  opacity: 0.5;
   float: right;
   height: 60px;
   width: 60px;
@@ -212,19 +226,19 @@ header:hover .additional_menu{
 }
 
 .user {
-  /* display: none; */
+  display: none;
   background: 0;
-  opacity: 0.8;
-    align-items: center;
-    background-position: center;
-    border: none;
-    height: 60px;
-    width: 60px;
-    margin-left: auto;
-    cursor: pointer;
-    background-repeat: no-repeat;
-    background-size: 2rem 2rem;
-    background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='white' class='bi bi-people' viewBox='0 0 16 16'><path d='M15 14s1 0 1-1-1-4-5-4-5 3-5 4 1 1 1 1h8zm-7.978-1A.261.261 0 0 1 7 12.996c.001-.264.167-1.03.76-1.72C8.312 10.629 9.282 10 11 10c1.717 0 2.687.63 3.24 1.276.593.69.758 1.457.76 1.72l-.008.002a.274.274 0 0 1-.014.002H7.022zM11 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm3-2a3 3 0 1 1-6 0 3 3 0 0 1 6 0zM6.936 9.28a5.88 5.88 0 0 0-1.23-.247A7.35 7.35 0 0 0 5 9c-4 0-5 3-5 4 0 .667.333 1 1 1h4.216A2.238 2.238 0 0 1 5 13c0-1.01.377-2.042 1.09-2.904.243-.294.526-.569.846-.816zM4.92 10A5.493 5.493 0 0 0 4 13H1c0-.26.164-1.03.76-1.724.545-.636 1.492-1.256 3.16-1.275zM1.5 5.5a3 3 0 1 1 6 0 3 3 0 0 1-6 0zm3-2a2 2 0 1 0 0 4 2 2 0 0 0 0-4z'/></svg>");
+  opacity: 0.5;
+  align-items: center;
+  background-position: center;
+  border: none;
+  height: 60px;
+  width: 60px;
+  margin-left: auto;
+  cursor: pointer;
+  background-repeat: no-repeat;
+  background-size: 2rem 2rem;
+  background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='white' class='bi bi-people' viewBox='0 0 16 16'><path d='M15 14s1 0 1-1-1-4-5-4-5 3-5 4 1 1 1 1h8zm-7.978-1A.261.261 0 0 1 7 12.996c.001-.264.167-1.03.76-1.72C8.312 10.629 9.282 10 11 10c1.717 0 2.687.63 3.24 1.276.593.69.758 1.457.76 1.72l-.008.002a.274.274 0 0 1-.014.002H7.022zM11 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm3-2a3 3 0 1 1-6 0 3 3 0 0 1 6 0zM6.936 9.28a5.88 5.88 0 0 0-1.23-.247A7.35 7.35 0 0 0 5 9c-4 0-5 3-5 4 0 .667.333 1 1 1h4.216A2.238 2.238 0 0 1 5 13c0-1.01.377-2.042 1.09-2.904.243-.294.526-.569.846-.816zM4.92 10A5.493 5.493 0 0 0 4 13H1c0-.26.164-1.03.76-1.724.545-.636 1.492-1.256 3.16-1.275zM1.5 5.5a3 3 0 1 1 6 0 3 3 0 0 1-6 0zm3-2a2 2 0 1 0 0 4 2 2 0 0 0 0-4z'/></svg>");
   }
   .user:hover{
     opacity: 1;
