@@ -47,11 +47,11 @@ header:hover{
 
 header:hover .main_menu {
     padding-top: 30px;
-    transition: 0.5s;
+    /* transition: 0.5s; */
 }
 header .main_menu {
     padding-top: 0px;
-    transition: 0.35s;
+    /* transition: 0.5s; */
 }
 
 ul,li,a {
