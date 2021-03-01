@@ -1,0 +1,249 @@
+@font-face {
+  font-family: "Montserrat-SemiBold"; /* Имя шрифта */
+  src: url("../fonts/Montserrat/Montserrat-SemiBold.ttf"); /* Путь к файлу со шрифтом */
+}
+
+@font-face {
+  font-family: "Montserrat-Thin"; /* Имя шрифта */
+  src: url("../fonts/Montserrat/Montserrat-Thin.ttf"); /* Путь к файлу со шрифтом */
+}
+
+@font-face {
+  font-family: "Montserrat-Light"; /* Имя шрифта */
+  src: url("../fonts/Montserrat/Montserrat-Light.ttf"); /* Путь к файлу со шрифтом */
+}
+
+.game_card {
+  margin: 50px auto 0% auto;
+  padding: 0px 15px 0px 10px;
+  height: 330px;
+  width: 220px;
+}
+
+.logo {
+  /* display: none; */
+  position: absolute;
+  border-radius: 15px;
+  margin-left: 0px;
+  height: 280px;
+  width: 200px;
+  background-color: violet;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  /* transform: translate(-50%,-50%); */
+  z-index: 10;
+}
+
+.playstation_part {
+  will-change: transform;
+  position: absolute;
+  /* float: right; */
+  /* margin-right: 50px; */
+  border-radius: 15px;
+  margin-left: 5px;
+  height: 280px;
+  width: 200px;
+  background-color: rgba(0, 55, 162, 1);
+  z-index: 9;
+  transition: 0.2s !important;
+}
+
+.push_label {
+  margin: 0px;
+  bottom: 0px;
+  top: 40px;
+  left: -1px;
+  /* right: 1000px; */
+  width: 200px;
+  height: 200px;
+  will-change: transform;
+  position: absolute;
+  color: white;
+  font-family: Montserrat-SemiBold;
+  -moz-transform: rotate(90deg); /* Для Firefox */
+  -ms-transform: rotate(90deg); /* Для IE */
+  -webkit-transform: rotate(90deg); /* Для Safari, Chrome, iOS */
+  -o-transform: rotate(90deg); /* Для Opera */
+  transform: rotate(90deg);
+  
+}
+
+.push_label > span {
+    display: block;
+    width: 120px;
+    height: 20px;
+    margin: 0 auto;
+  text-align: center;
+}
+
+.push_label {
+    will-change: transform;
+  opacity: 0;
+  transition: 1.0s !important;
+}
+
+.playstation_part:hover > .push_label {
+  will-change: transform;
+  opacity: 1;
+  transition: 1.0s !important;
+}
+.playstation_part:hover {
+  will-change: transform;
+  margin-left: 20px;
+  transition: 0.2s !important;
+}
+.playstation_part:hover + .xbox_part {
+  will-change: transform;
+  margin-left: 25px;
+  transition: 0.2s !important;
+}
+.playstation_part:hover + .xbox_part + .nintendo_part {
+  will-change: transform;
+  margin-left: 30px;
+  transition: 0.2s !important;
+}
+.playstation_part:hover + .xbox_part + .nintendo_part + .pc_part {
+  will-change: transform;
+  margin-left: 35px;
+  transition: 0.2s !important;
+}
+
+.xbox_part {
+  will-change: transform;
+  position: absolute;
+  /* float: right; */
+  /* margin-right: 50px; */
+  border-radius: 15px;
+  margin-left: 10px;
+  height: 280px;
+  width: 200px;
+  background-color: rgba(0, 131, 0, 1);
+  z-index: 8;
+  transition: 0.2s !important;
+}
+
+.xbox_part > .push {
+  text-align: center;
+  margin: 172px 0px 0px 227px;
+  will-change: transform;
+  position: static;
+  color: white;
+  font-family: Montserrat-SemiBold;
+  -moz-transform: rotate(90deg); /* Для Firefox */
+  -ms-transform: rotate(90deg); /* Для IE */
+  -webkit-transform: rotate(90deg); /* Для Safari, Chrome, iOS */
+  -o-transform: rotate(90deg); /* Для Opera */
+  transform: rotate(90deg);
+  opacity: 0;
+  transition: 1.0s !important;
+}
+
+.xbox_part:hover > .push_label {
+  will-change: transform;
+  opacity: 1;
+  transition: 1.0s !important;
+}
+.xbox_part:hover {
+  will-change: transform;
+  margin-left: 25px;
+  transition: 0.2s !important;
+  content: "Us";
+}
+.xbox_part:hover + .nintendo_part {
+  will-change: transform;
+  margin-left: 30px;
+  transition: 0.2s !important;
+}
+.xbox_part:hover + .nintendo_part + .pc_part {
+  will-change: transform;
+  margin-left: 35px;
+  transition: 0.2s !important;
+}
+
+.nintendo_part {
+  will-change: transform;
+  position: absolute;
+  /* float: right; */
+  /* margin-right: 50px; */
+  border-radius: 15px;
+  margin-left: 15px;
+  height: 280px;
+  width: 200px;
+  background-color: rgba(249, 0, 0, 1);
+  z-index: 7;
+  transition: 0.2s !important;
+}
+
+.push {
+  text-align: center;
+  margin: 158px 0px 0px 229px;
+  will-change: transform;
+  position: static;
+  color: white;
+  font-family: Montserrat-SemiBold;
+  -moz-transform: rotate(90deg); /* Для Firefox */
+  -ms-transform: rotate(90deg); /* Для IE */
+  -webkit-transform: rotate(90deg); /* Для Safari, Chrome, iOS */
+  -o-transform: rotate(90deg); /* Для Opera */
+  transform: rotate(90deg);
+  opacity: 0;
+  transition: 1.0s !important;
+}
+
+.nintendo_part:hover > .push_label {
+  will-change: transform;
+  opacity: 1;
+  transition: 1.0s !important;
+}
+.nintendo_part:hover {
+  will-change: transform;
+  margin-left: 30px;
+  transition: 0.2s !important;
+}
+.nintendo_part:hover + .pc_part {
+  will-change: transform;
+  margin-left: 35px;
+  transition: 0.2s !important;
+}
+
+.pc_part {
+  will-change: transform;
+  position: absolute;
+  /* float: right; */
+  /* margin-right: 50px; */
+  border-radius: 15px;
+  margin-left: 20px;
+  height: 280px;
+  width: 200px;
+  background-color: rgb(0, 0, 0);
+  z-index: 6;
+  transition: 0.2s !important;
+}
+
+.push{
+  text-align: center;
+  margin: 185px 0px 0px 228px;
+  will-change: transform;
+  position: static;
+  color: white;
+  font-family: Montserrat-SemiBold;
+  -moz-transform: rotate(90deg); /* Для Firefox */
+  -ms-transform: rotate(90deg); /* Для IE */
+  -webkit-transform: rotate(90deg); /* Для Safari, Chrome, iOS */
+  -o-transform: rotate(90deg); /* Для Opera */
+  transform: rotate(90deg);
+  opacity: 0;
+  transition: 1.0s !important;
+}
+
+.pc_part:hover > .push_label {
+  will-change: transform;
+  opacity: 1;
+  transition: 1.0s !important;
+}
+.pc_part:hover {
+  will-change: transform;
+  margin-left: 35px;
+  transition: 0.2s !important;
+}
