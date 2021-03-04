@@ -12,9 +12,13 @@ html, body, header {
     text-rendering:optimizeLegibility;
 }
 
-.content{
+.content_catalog{
+    display: flex;
+    align-content: flex-start;
+    flex-wrap: wrap;
     width: 90%;
-    height: 300px;
+    /* min-height: 1500px; */
+    height: 100%;
     margin: 7% 5%;
     padding: 0;
     background-color: azure;
