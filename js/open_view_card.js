@@ -14,7 +14,6 @@ var openCard = function () {
     }
     changeCard.call(this);
     this.setAttribute("style", "margin-left:0px; z-index: 11;");
-    // this.classList.remove('playstation_part_hover', 'xbox_part_hover', 'nintendo_part_hover', 'pc_part_hover');//убирает движение "главного дива" при наведении
     this.setAttribute("onclick", 'next.call(this)'); //назначает onclick переход на страницу с игрой
 }
 
@@ -25,11 +24,9 @@ var changeCard = function (){
     var countMove = 5;
     for(var i = 1; i<=4; i++){
         parentEl.children[i].classList.remove(`${partList[i]}_hover`);
-        // parentEl.children[i].classList.add(`${partList[i]}_active`);
         parentEl.children[i].removeAttribute("style");
         if(parentEl.children[i] != this){ //просматриваем все карточки кроме нажатой
             parentEl.children[i].classList.add(`game_card_move_left_${countMove}px`) //добавляем им новые классы
-            // parentEl.children[i].classList.remove(partList[i])//убираем обычные класс
             parentEl.children[i].setAttribute("onclick", 'openCard.call(this)');//возвращает нажатие на div "part" ссылка на метод
             countMove += 5;
         }
