@@ -1,16 +1,21 @@
 @font-face {
   font-family: "Montserrat-SemiBold"; /* Имя шрифта */
-  src: url("../fonts/Montserrat/Montserrat-SemiBold.ttf"); /* Путь к файлу со шрифтом */
+  src: url("../../fonts/Montserrat/Montserrat-SemiBold.ttf"); /* Путь к файлу со шрифтом */
 }
 
 @font-face {
   font-family: "Montserrat-Thin"; /* Имя шрифта */
-  src: url("../fonts/Montserrat/Montserrat-Thin.ttf"); /* Путь к файлу со шрифтом */
+  src: url("../../fonts/Montserrat/Montserrat-Thin.ttf"); /* Путь к файлу со шрифтом */
 }
 
 @font-face {
   font-family: "Montserrat-Light"; /* Имя шрифта */
-  src: url("../fonts/Montserrat/Montserrat-Light.ttf"); /* Путь к файлу со шрифтом */
+  src: url("../../fonts/Montserrat/Montserrat-Light.ttf"); /* Путь к файлу со шрифтом */
+}
+
+@font-face {
+  font-family: "Montserrat-Regular"; /* Имя шрифта */
+  src: url("../../fonts/Montserrat/Montserrat-Regular.ttf"); /* Путь к файлу со шрифтом */
 }
 
 .game_card {
@@ -20,6 +25,13 @@
   width: 220px;
 }
 
+.game_card_name{
+  height: 40px;
+  width: 100%;
+  margin-top: 290px;
+  font-family: "Montserrat-Regular";
+  text-align: center;
+}
 .logo {
   cursor: pointer;
   position: absolute;
