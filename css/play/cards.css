@@ -39,12 +39,12 @@
 
 .hover_link_logo {
   position: relative;
-  background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='white' class='bi bi-eye' viewBox='0 0 16 16'><path d='M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z'/><path d='M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z'/></svg>");
+  background-color: rgba(200, 200, 200, 0.4);
+  background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='rgba(255, 255, 255, 0.5)' class='bi bi-eye' viewBox='0 0 16 16'><path d='M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z'/><path d='M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z'/></svg>");
   background-size: 3.5em 3.5em;
   background-repeat: no-repeat;
-  background-color: rgba(200, 200, 200, 0.4);
   border-radius: 15px;
-  width: 100%;
+  width: 200.5px;
   height: 100%;
   opacity: 0;
   transition: 0.5s;
@@ -58,6 +58,21 @@
 }
 
 .playstation_part {
+  cursor: pointer;
+  will-change: transform;
+  position: absolute;
+  /* float: right; */
+  /* margin-right: 50px; */
+  border-radius: 15px;
+  margin-left: 5px;
+  height: 280px;
+  width: 200px;
+  background-color: rgba(0, 55, 162, 1);
+  z-index: 9;
+  transition: 0.2s !important;
+}
+
+.playstation_part_active{
   cursor: pointer;
   will-change: transform;
   position: absolute;
@@ -105,27 +120,27 @@
   transition: 1s !important;
 }
 
-.playstation_part:hover > .push_label {
+.playstation_part_hover:hover > .push_label {
   will-change: transform;
   opacity: 1;
   transition: 1s !important;
 }
-.playstation_part:hover {
+.playstation_part_hover:hover {
   will-change: transform;
   margin-left: 20px;
   transition: 0.2s !important;
 }
-.playstation_part:hover + .xbox_part {
+.playstation_part_hover:hover + .xbox_part {
   will-change: transform;
   margin-left: 25px;
   transition: 0.2s !important;
 }
-.playstation_part:hover + .xbox_part + .nintendo_part {
+.playstation_part_hover:hover + .xbox_part + .nintendo_part {
   will-change: transform;
   margin-left: 30px;
   transition: 0.2s !important;
 }
-.playstation_part:hover + .xbox_part + .nintendo_part + .pc_part {
+.playstation_part_hover:hover + .xbox_part + .nintendo_part + .pc_part {
   will-change: transform;
   margin-left: 35px;
   transition: 0.2s !important;
@@ -146,39 +161,38 @@
   transition: 0.2s !important;
 }
 
-.xbox_part > .push {
-  text-align: center;
-  margin: 172px 0px 0px 227px;
+.xbox_part_active {
+  cursor: pointer;
   will-change: transform;
-  position: static;
-  color: white;
-  font-family: Montserrat-SemiBold;
-  -moz-transform: rotate(90deg); /* Для Firefox */
-  -ms-transform: rotate(90deg); /* Для IE */
-  -webkit-transform: rotate(90deg); /* Для Safari, Chrome, iOS */
-  -o-transform: rotate(90deg); /* Для Opera */
-  transform: rotate(90deg);
-  opacity: 0;
-  transition: 1s !important;
+  position: absolute;
+  /* float: right; */
+  /* margin-right: 50px; */
+  border-radius: 15px;
+  margin-left: 10px;
+  height: 280px;
+  width: 200px;
+  background-color: rgba(0, 131, 0, 1);
+  z-index: 8;
+  transition: 0.2s !important;
 }
 
-.xbox_part:hover > .push_label {
+.xbox_part_hover:hover > .push_label {
   will-change: transform;
   opacity: 1;
   transition: 1s !important;
 }
-.xbox_part:hover {
+.xbox_part_hover:hover {
   will-change: transform;
   margin-left: 25px;
   transition: 0.2s !important;
   content: "Us";
 }
-.xbox_part:hover + .nintendo_part {
+.xbox_part_hover:hover + .nintendo_part {
   will-change: transform;
   margin-left: 30px;
   transition: 0.2s !important;
 }
-.xbox_part:hover + .nintendo_part + .pc_part {
+.xbox_part_hover:hover + .nintendo_part + .pc_part {
   will-change: transform;
   margin-left: 35px;
   transition: 0.2s !important;
@@ -199,33 +213,32 @@
   transition: 0.2s !important;
 }
 
-.push {
-  text-align: center;
-  margin: 158px 0px 0px 229px;
+.nintendo_part_active {
+  cursor: pointer;
   will-change: transform;
-  position: static;
-  color: white;
-  font-family: Montserrat-SemiBold;
-  -moz-transform: rotate(90deg); /* Для Firefox */
-  -ms-transform: rotate(90deg); /* Для IE */
-  -webkit-transform: rotate(90deg); /* Для Safari, Chrome, iOS */
-  -o-transform: rotate(90deg); /* Для Opera */
-  transform: rotate(90deg);
-  opacity: 0;
-  transition: 1s !important;
+  position: absolute;
+  /* float: right; */
+  /* margin-right: 50px; */
+  border-radius: 15px;
+  margin-left: 15px;
+  height: 280px;
+  width: 200px;
+  background-color: rgba(249, 0, 0, 1);
+  z-index: 7;
+  transition: 0.2s !important;
 }
 
-.nintendo_part:hover > .push_label {
+.nintendo_part_hover:hover > .push_label {
   will-change: transform;
   opacity: 1;
   transition: 1s !important;
 }
-.nintendo_part:hover {
+.nintendo_part_hover:hover {
   will-change: transform;
   margin-left: 30px;
   transition: 0.2s !important;
 }
-.nintendo_part:hover + .pc_part {
+.nintendo_part_hover:hover + .pc_part {
   will-change: transform;
   margin-left: 35px;
   transition: 0.2s !important;
@@ -246,29 +259,89 @@
   transition: 0.2s !important;
 }
 
-.push {
-  text-align: center;
-  margin: 185px 0px 0px 228px;
+.pc_part_active {
+  cursor: pointer;
   will-change: transform;
-  position: static;
-  color: white;
-  font-family: Montserrat-SemiBold;
-  -moz-transform: rotate(90deg); /* Для Firefox */
-  -ms-transform: rotate(90deg); /* Для IE */
-  -webkit-transform: rotate(90deg); /* Для Safari, Chrome, iOS */
-  -o-transform: rotate(90deg); /* Для Opera */
-  transform: rotate(90deg);
-  opacity: 0;
-  transition: 1s !important;
+  position: absolute;
+  /* float: right; */
+  /* margin-right: 50px; */
+  border-radius: 15px;
+  margin-left: 20px;
+  height: 280px;
+  width: 200px;
+  background-color: rgb(0, 0, 0);
+  z-index: 6;
+  transition: 0.2s !important;
 }
 
-.pc_part:hover > .push_label {
+.pc_part_hover:hover > .push_label {
   will-change: transform;
   opacity: 1;
   transition: 1s !important;
 }
-.pc_part:hover {
+.pc_part_hover:hover {
   will-change: transform;
   margin-left: 35px;
+  transition: 0.2s !important;
+}
+
+.game_link_logo_only_display_none{
+  display: none;
+}
+
+.game_card_move_left_5px{
+  margin-left: 5px;
+}
+.game_card_move_left_5px:hover > .push_label {
+  will-change: transform;
+  opacity: 1;
+  transition: 1s !important;
+}
+.game_card_move_left_5px:hover {
+  will-change: transform;
+  margin-left: 20px;
+  transition: 0.2s !important;
+}
+.game_card_move_left_5px:hover ~ .game_card_move_left_10px {
+  will-change: transform;
+  margin-left: 25px;
+  transition: 0.2s !important;
+}
+.game_card_move_left_5px:hover ~ .game_card_move_left_10px ~ .game_card_move_left_15px {
+  will-change: transform;
+  margin-left: 30px;
+  transition: 0.2s !important;
+}
+
+.game_card_move_left_10px{
+  margin-left: 10px;
+}
+.game_card_move_left_10px:hover > .push_label {
+  will-change: transform;
+  opacity: 1;
+  transition: 1s !important;
+}
+.game_card_move_left_10px:hover {
+  will-change: transform;
+  margin-left: 25px;
+  transition: 0.2s !important;
+}
+.game_card_move_left_10px:hover ~ .game_card_move_left_15px {
+  will-change: transform;
+  margin-left: 30px;
+  transition: 0.2s !important;
+}
+
+.game_card_move_left_15px{
+  margin-left: 15px;
+}
+.game_card_move_left_15px:hover > .push_label {
+  will-change: transform;
+  opacity: 1;
+  transition: 1s !important;
+}
+.game_card_move_left_15px:hover {
+  will-change: transform;
+  margin-left: 30px;
   transition: 0.2s !important;
 }
