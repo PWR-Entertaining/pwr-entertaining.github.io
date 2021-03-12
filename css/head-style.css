@@ -1,3 +1,8 @@
+@font-face{
+  font-family: "Montserrat-SemiBold"; /* Имя шрифта */
+  src: url("../fonts/Montserrat/Montserrat-SemiBold.ttf"); /* Путь к файлу со шрифтом */
+}
+
 
 header {
   /* will-change: transform; */
@@ -87,11 +92,6 @@ nav {
 
 button{
   outline: none;
-}
-
-@font-face{
-  font-family: "Montserrat-SemiBold"; /* Имя шрифта */
-  src: url("../fonts/Montserrat/Montserrat-SemiBold.ttf"); /* Путь к файлу со шрифтом */
 }
 
 .button_home {
@@ -197,14 +197,10 @@ header:hover .additional_menu{
   opacity: 1.0;
 }
 
-/* .additional_menu > .search > .button_search, .additional_menu > .user  {
-  display: none;
-} */
 header:hover .additional_menu > div > button, header:hover .additional_menu > button{
   display: flex;
 }
 .search{
-  /* display: none; */
   height: auto;
   width: 390px;
   padding: 0;
