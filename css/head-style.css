@@ -207,15 +207,11 @@ button{
   -o-transform: rotate(90deg); /* Для Opera */
   transform: rotate(90deg);
   align-self: center;
-}
-.button_back{
-  transition: 1s;
   opacity: 0.7;
 }
 
 .button_back:hover{
-  transition: 1s;
-  opacity: 1.0;
+  opacity: 1;
 }
 
 .additional_menu{
