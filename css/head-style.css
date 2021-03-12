@@ -104,7 +104,7 @@ button{
   font-size: 1.2em;
   height: 60px;
   width: 60px;
-  font-family: Montserrat-SemiBold;
+  font-family: "Montserrat-SemiBold";
   border-radius: 50%;
   cursor: pointer;
   z-index: 51;
