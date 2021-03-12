@@ -11,44 +11,64 @@
     <link rel="stylesheet" href="../css/play/game-page-style.css">
     <link rel="stylesheet" href="../css/footer-style.css">
 </head>
-
-    <header>
-        <nav class="main_menu">
-            <button class="button_play" onclick='location.href="play.html"'></button>
-            <ul class="navigation">
-                <li>
-                    <button class="button_home" onclick='location.href="../index.html"'>PWR</button> <!-- ссылка -->
-                </li>
-                <li>
-                    <button class="button_watch" onclick='location.href="../watch_part/watch.html"'></button>
-                </li>
-                <li>
-                    <button class="button_read" onclick='location.href="../read_part/read.html"'></button>
-                </li>
-            </ul>
-        </nav>
-        <div class="additional_menu">
-            <div class="search">
-                <button class="button_search"></button>
-            </div>
-            <button class="user"></button>
+<header>
+    <nav class="main_menu">
+            <a class="button_back" onclick='location.href="play.html"'></a>
+            <button class="button_play"></button>
+        <ul class="navigation">
+            <li>
+                <button class="button_home" onclick='location.href="../index.html"'>PWR</button> <!-- ссылка -->
+            </li>
+            <li>
+                <button class="button_watch" onclick='location.href="../watch_part/watch.html"'></button>
+            </li>
+            <li>
+                <button class="button_read" onclick='location.href="../read_part/read.html"'></button>
+            </li>
+        </ul>
+    </nav>
+    <div class="additional_menu">
+        <div class="search">
+            <button class="button_search"></button>
         </div>
+        <button class="user"></button>
+    </div>
 </header>
-<body>
-        <div class="main_game_page_background" style="background-image: url(../img/cyber_gor.jpg);">
-            <div></div>
-        </div>
-        <div class="main_game_page">
-            <div class="main_game_page_usable_block">
-                <div class="main_game_page_usable_block_price"></div>
-                <div class="main_game_page_usable_block_info"></div>
-                <div class="main_game_page_usable_block_requirements"></div>
-                <div class="main_game_page_usable_block_ratings_and_reviews"></div>
-            </div>
-        </div>     
-        <footer>
 
-        </footer>
+<body>
+    <div class="main_game_page_background" style="background-image: url(../img/cyber_gor.jpg);">
+        <div class="main_game_page_background_content">
+            <div class="main_game_page_background_content_name"><span>CYBERPUNK: 2077</span></div>
+            <div class="main_game_page_background_content_ratings">
+                <div class="main_game_page_background_content_ratings_journal">
+                    <div class="main_game_page_background_content_ratings_journal_logo"
+                        style="background-image: url(../img/Metacritic_M.png);"></div>
+                    <div class="main_game_page_background_content_ratings_journal_rating">9.0</div>
+                </div>
+                <div class="main_game_page_background_content_ratings_journal">
+                    <div class="main_game_page_background_content_ratings_journal_logo"
+                        style="background-image: url(../img/stopgame.jpg);"></div>
+                    <div class="main_game_page_background_content_ratings_journal_rating">9.2</div>
+                </div>
+                <div class="main_game_page_background_content_ratings_journal">
+                    <div class="main_game_page_background_content_ratings_journal_logo"
+                        style="background-image: url(../img/igromania.png);"></div>
+                    <div class="main_game_page_background_content_ratings_journal_rating">4.1</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="main_game_page">
+        <div class="main_game_page_usable_block">
+            <div class="main_game_page_usable_block_price"></div>
+            <div class="main_game_page_usable_block_info"></div>
+            <div class="main_game_page_usable_block_requirements"></div>
+            <div class="main_game_page_usable_block_ratings_and_reviews"></div>
+        </div>
+    </div>
+    <footer>
+
+    </footer>
 
 </body>
 

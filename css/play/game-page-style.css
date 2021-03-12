@@ -1,6 +1,10 @@
 @font-face {
+    font-family: "Montserrat-Bold"; /* Имя шрифта */
+    src: url("../../fonts/Montserrat/Montserrat-Bold.ttf"); /* Путь к файлу со шрифтом */
+  }
+  @font-face {
     font-family: "Montserrat-SemiBold"; /* Имя шрифта */
-    src: url("../fonts/Montserrat/Montserrat-SemiBold.ttf"); /* Путь к файлу со шрифтом */
+    src: url("../../fonts/Montserrat/Montserrat-SemiBold.ttf"); /* Путь к файлу со шрифтом */
   }
 
 body{
@@ -21,26 +25,82 @@ html, body, header {
     padding: 0;
     margin: 0px;
     width: 100%;
-    /* height: 600px; */
     height: 100%;
     background-size: cover;
     background-position-x: inherit;
     background-position-y: inherit;
     background-repeat: no-repeat;
     background-position: center;
-    /* z-index: 10; */
+}
+
+.main_game_page_background_content{
+    position: relative;
+    /* background-color: rgba(200, 200, 200, 0.4); */
+    background-color: rgba(0, 0, 0, 0.4);
+    width: 100%;
+    height: 100%;
+}
+
+.main_game_page_background_content_name{
+    height: 100px;
+    /* background-color: bisque; */
+    padding: 100px 50px;
+    font-size: 40px;
+}
+.main_game_page_background_content_name > span{
+    background-color: azure;
+    font-family: "Montserrat-Bold";
+    font-size: 40px;
+}
+
+.main_game_page_background_content_ratings{
+    position: absolute;
+    display: flex;
+    width: 97%;   
+    height: 110px; 
+    margin: 0px 3%;
+    padding: 0px 0px;
+    bottom: 0;
+}
+.main_game_page_background_content_ratings_journal{
+    background-color:rgba(0, 0, 0, 0.5);
+    width: 80px;   
+    height: 100%; 
+    margin: 0px 10px;
+    padding: 0px 0px;
+    bottom: 0;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.main_game_page_background_content_ratings_journal_logo{
+    background-color: black;
+    background-size: cover ;
+    background-position: center;
+    width: 50px;
+    height: 50px;
+    margin: 10px 15px;
+    padding:  0px 0px;
+    border-radius: 100%;
+}
+
+.main_game_page_background_content_ratings_journal_rating{
+    width: 50px;
+    height: 25px;
+    margin: 10px 15px;
+    padding:  0px 0px;
+    font-family: "Montserrat-SemiBold";
+    font-size: 25px;
+    color: white;
+    text-align: center;
 }
 
 
 .main_game_page{
-    /* position: relative; */
     width: 90%;
     height: 100%;
     margin: 0 5%;
     padding: 712px 0px 0px 0px;
     background-color: rgba(240, 255, 255, 0.9);
-    /* transform: translate(0%, 71.2%); */
-    /* z-index: 5; */
 }
 
 .main_game_page_usable_block{
@@ -50,7 +110,6 @@ html, body, header {
 }
 
 .main_game_page_usable_block > div{
-    /* position; */
     width: 100%;
     height: 500px;
     margin: 0px 0px;
@@ -81,5 +140,31 @@ html, body, header {
         height: 100%;
         margin: 0% 0%;
         padding: 500px 0px 0px 0px;
+    }
+
+    .main_game_page_background_content_name{
+        padding: 50px 20px;
+    }
+
+    .main_game_page_background_content_name > span{
+        font-size: 25px;
+    }
+
+    .main_game_page_background_content_ratings{
+        height: 80px; 
+    }
+    .main_game_page_background_content_ratings_journal{
+        width: 60px;   
+    }
+    
+    .main_game_page_background_content_ratings_journal_logo{
+        width: 30px;
+        height: 30px;
+    }
+    
+    .main_game_page_background_content_ratings_journal_rating{
+        width: 30px;
+        height: 15px;
+        font-size: 15px;
     }
 }
