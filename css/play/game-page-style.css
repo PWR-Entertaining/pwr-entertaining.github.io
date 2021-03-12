@@ -44,7 +44,7 @@ html, body, header {
 .main_game_page_background_content_name{
     height: 100px;
     /* background-color: bisque; */
-    padding: 100px 50px;
+    padding: 65px 50px;
     font-size: 40px;
 }
 .main_game_page_background_content_name > span{
@@ -143,7 +143,7 @@ html, body, header {
     }
 
     .main_game_page_background_content_name{
-        padding: 50px 20px;
+        padding: 55px 20px;
     }
 
     .main_game_page_background_content_name > span{
