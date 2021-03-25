@@ -65,7 +65,7 @@ footer .footer_content > div .logo_svg {
   }
   
   @-webkit-keyframes bubble-size {
-    0%, 10% {
+    0%, 15% {
       width: var(--size, 0.5rem);
       height: var(--size, 0.5rem);
     }
@@ -76,7 +76,7 @@ footer .footer_content > div .logo_svg {
   }
   
   @keyframes bubble-size {
-    0%, 10% {
+    0%, 15% {
       width: var(--size, 0.5rem);
       height: var(--size, 0.5rem);
     }
@@ -86,7 +86,7 @@ footer .footer_content > div .logo_svg {
     }
   }
   @-webkit-keyframes bubble-move {
-    0% {
+    20% {
       bottom: 1rem;
     }
     100% {
@@ -94,7 +94,7 @@ footer .footer_content > div .logo_svg {
     }
   }
   @keyframes bubble-move {
-    0% {
+    20% {
       bottom: 1rem;
     }
     100% {
