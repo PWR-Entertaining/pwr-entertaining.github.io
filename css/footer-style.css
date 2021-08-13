@@ -4,7 +4,6 @@ footer {
     --footer-background:#ED5565;
     display: grid;
     position: relative;
-    grid-area: footer;
     min-height: 12rem;
   }
 footer .bubbles {
@@ -21,9 +20,9 @@ footer .bubbles .bubble {
     left: var(--position, 50%);
     background: var(--footer-background);
     border-radius: 100%;
-    -webkit-animation: bubble-size var(--time, 4s) ease-in infinite var(--delay, 0s), bubble-move var(--time, 4s) ease-in infinite var(--delay, 0s);
-            animation: bubble-size var(--time, 4s) ease-in infinite var(--delay, 0s), bubble-move var(--time, 4s) ease-in infinite var(--delay, 0s);
-    transform: translate(-50%, 100%);
+    -webkit-animation: bubble-size var(--time, 10s) ease-in infinite var(--delay, 0s), bubble-move var(--time, 10s) ease-in infinite var(--delay, 0s);
+            animation: bubble-size var(--time, 10s) ease-in infinite var(--delay, 0s), bubble-move var(--time, 10s) ease-in infinite var(--delay, 0s);
+    transform: translate(-210%, 100%);
   }
 footer .footer_content {
     z-index: 2;
@@ -66,39 +65,39 @@ footer .footer_content > div .logo_svg {
   }
   
   @-webkit-keyframes bubble-size {
-    0%, 75% {
-      width: var(--size, 4rem);
-      height: var(--size, 4rem);
+    0%, 15% {
+      width: var(--size, 0.5rem);
+      height: var(--size, 0.5rem);
     }
-    100% {
+    70% {
       width: 0rem;
       height: 0rem;
     }
   }
   
   @keyframes bubble-size {
-    0%, 75% {
-      width: var(--size, 4rem);
-      height: var(--size, 4rem);
+    0%, 15% {
+      width: var(--size, 0.5rem);
+      height: var(--size, 0.5rem);
     }
-    100% {
+    70% {
       width: 0rem;
       height: 0rem;
     }
   }
   @-webkit-keyframes bubble-move {
     0% {
-      bottom: -4rem;
+      bottom: 1rem;
     }
     100% {
-      bottom: var(--distance, 10rem);
+      bottom: var(--distance, 0rem);
     }
   }
   @keyframes bubble-move {
     0% {
-      bottom: -4rem;
+      bottom: 1rem;
     }
     100% {
-      bottom: var(--distance, 10rem);
+      bottom: var(--distance, 0rem);
     }
   }
